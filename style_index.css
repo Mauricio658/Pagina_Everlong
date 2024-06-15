@@ -98,7 +98,7 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background:url(bg.jpg);
+    background:url(images/bg.jpg);
     padding: 40px;
 }
 
@@ -286,7 +286,7 @@ td, th{
 
 
 .banner2 {
-    background: url('mapa.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
+    background: url('images/mapa.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
     background-size: cover;
     height: 400px; /* Ajusta según la altura deseada */
     position: relative;
@@ -327,7 +327,7 @@ td, th{
 
 .banner3 {
     position: relative;
-    background: url('banner2.jpg') no-repeat center center; /* Cambia 'tu-imagen.jpg' con la ruta de tu imagen real */
+    background: url('images/banner2.jpg') no-repeat center center; /* Cambia 'tu-imagen.jpg' con la ruta de tu imagen real */
     background-size: cover;
     height: 300px; /* Ajusta según tus necesidades */
     width: 100%;
@@ -450,7 +450,7 @@ td, th{
 
 
 .banner4 {
-    background: url('banner4.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
+    background: url('images/banner4.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
     background-size: cover;
     height: 300px; /* Ajusta según la altura deseada */
     position: relative;
@@ -529,7 +529,7 @@ td, th{
 
 
 .banner5 {
-    background: url('banner5.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
+    background: url('images/banner5.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
     background-size: cover;
     height: 300px; /* Ajusta según la altura deseada */
     position: relative;
@@ -552,7 +552,6 @@ td, th{
 .banner5 p {
     margin-bottom: 20px; /* Espaciado antes del botón */
 }
-
 
 .about-section {
     background-color: #f9f9f9;
