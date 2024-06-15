@@ -1,0 +1,580 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #cee905bb;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 90%;
+    margin: 0 auto; /* Centra la barra de navegación */
+    display: block; /* Cambiado de flex a block */
+}
+
+.logo {
+    display: block; /* Asegúrate de que el logo se muestra correctamente */
+    margin: 0 auto; /* Centra el logo horizontalmente */
+    width: 20%; /* Ajusta según necesidad */
+}
+
+nav {
+    position: static; /* Eliminado el posicionamiento absoluto */
+    width: 100%; /* Asegura que nav tome el ancho completo */
+}
+
+nav ul {
+    text-align: center; /* Centra los elementos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+}
+
+nav li {
+    display: inline; /* Mantiene los elementos de la lista en línea */
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.tamano_imagen{
+    width: 100%; /* Ajusta según necesidad */
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.productos h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+footer{
+    text-align: center;
+    background:url(bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color:white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(235, 153, 1);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;   
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*CSS para el home*/
+
+.banner {
+    width: 100%;
+    position: relative; /* Esto permite posicionar el pseudo-elemento relativo al banner */
+    display: block; /* Asegura que el banner es un bloque, necesario si es un enlace */
+    background: rgba(0, 0, 0, 0.9); /* Color negro con opacidad, ajusta según necesites */
+}
+
+
+
+.principal{
+    padding: 3em 0 ;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+
+.principal p{
+    margin: 0 0 1em;
+
+}
+
+.principal strong{
+    font-weight: bold;
+
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.imagen-Diferenciales{
+    width: 60%;
+    box-shadow: 10px 10px 40px 10px #000000;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+.imagen-Diferenciales:hover{
+    opacity: 30%;
+    transition: 400ms;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items::before{
+    content: "★";
+}
+.items:first-child{
+    font-weight: bold;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja,.principal,.mapa-contenido,.contenido-diferenciales,.video{
+        width: auto;
+    }
+
+    .lista-diferenciales,.imagen-Diferenciales{
+        width: 100%;
+    }
+}
+
+
+.banner2 {
+    background: url('mapa.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
+    background-size: cover;
+    height: 400px; /* Ajusta según la altura deseada */
+    position: relative;
+    color: rgb(255, 255, 255); /* Ajusta el color de texto según tu diseño */
+}
+
+.banner2-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+.banner2 h1, .banner2 h2 {
+    margin: 0; /* Remueve margen para controlar el espaciado */
+}
+
+.banner2 p {
+    margin-bottom: 20px; /* Espaciado antes del botón */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el relleno según tus preferencias */
+    background-color: #ffcc00; /* Color de fondo del botón */
+    border: none; /* Sin bordes */
+    font-size: 16px; /* Tamaño de letra del botón */
+    color: white; /* Color de texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+
+.button:hover {
+    background-color: #e6b800; /* Cambio de color cuando el mouse pasa sobre él */
+}
+
+.banner3 {
+    position: relative;
+    background: url('banner2.jpg') no-repeat center center; /* Cambia 'tu-imagen.jpg' con la ruta de tu imagen real */
+    background-size: cover;
+    height: 300px; /* Ajusta según tus necesidades */
+    width: 100%;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cambia el color según tus preferencias */
+    text-align: center;
+    width: 80%; /* Ajusta el ancho según el diseño */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*    */
+
+.curso-detalle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.curso-imagen img {
+    width: 90%;
+    height: auto;
+    border-radius: 50%; /* Para hacer la imagen redonda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.curso-info {
+    width: 45%;
+    padding: 40px;
+    background-color: rgba(255, 255, 0, 0.2); /* Color de fondo semi-transparente */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+.curso-licencias {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Asegura que ocupe el ancho completo */
+}
+
+.licencias div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.licencias h3 {
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.licencias ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0;
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.licencias li {
+    background-color: #ffff99; /* Color de fondo de cada elemento */
+    padding: 10px;
+    margin-bottom: 5px; /* Espacio entre elementos */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Asegura que la última entrada no tenga un margen inferior */
+.licencias li:last-child {
+    margin-bottom: 0;
+}
+
+/*  */
+.tabla-caracteristicas {
+    width: 100%; /* Ajusta el ancho según lo necesario */
+    max-width: 1200px; /* Limita el ancho máximo para evitar que se extienda demasiado */
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+    padding: 80px;
+    background-color: #fff; /* Fondo blanco para la tabla */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Sombra sutil para la tabla */
+}
+
+.tabla-caracteristicas table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+}
+
+.tabla-caracteristicas th, .tabla-caracteristicas td {
+    text-align: left;
+    padding: 8px; /* Espacio interior para texto en celdas */
+    border-bottom: 1px solid #ccc; /* Línea separadora entre filas */
+}
+
+.tabla-caracteristicas th {
+    background-color: #c7de19; /* Fondo para los encabezados de columna */
+    font-weight: bold;
+}
+
+.tabla-caracteristicas td {
+    background-color: #f9f9f9; /* Fondo para las celdas */
+}
+
+
+.banner4 {
+    background: url('banner4.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
+    background-size: cover;
+    height: 300px; /* Ajusta según la altura deseada */
+    position: relative;
+    color: rgb(255, 255, 255); /* Ajusta el color de texto según tu diseño */
+}
+
+.banner4-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+.banner4 h1, .banner4 h2 {
+    margin: 0; /* Remueve margen para controlar el espaciado */
+}
+
+.banner4 p {
+    margin-bottom: 20px; /* Espaciado antes del botón */
+}
+
+
+/*------*/
+
+.beneficios-seccion {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 20px; /* Relleno alrededor del texto */
+    margin: 20px auto; /* Margen arriba y abajo y centrado horizontal */
+    width: 80%; /* Ancho del contenedor */
+    max-width: 1200px; /* Máximo ancho del contenedor */
+}
+
+.beneficios-seccion h2 {
+    color: #cad310; /* Color de texto para los títulos */
+    padding-bottom: 10px; /* Espacio debajo del título */
+    font-size: 26px; /* Tamaño de fuente para el párrafo */
+}
+
+.beneficios-seccion ul {
+    list-style: inside disc; /* Estilo de lista */
+}
+
+.beneficios-seccion li {
+    padding: 5px 0; /* Relleno para cada elemento de la lista */
+}
+
+.beneficios-seccion p {
+    font-size: 16px; /* Tamaño de fuente para el párrafo */
+    color: #666; /* Color de texto para el párrafo */
+}
+
+
+.curso-seccion {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.curso-seccion h2 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+}
+
+.curso-seccion ul, .curso-seccion ol {
+    padding-left: 20px;
+}
+
+.curso-seccion li {
+    line-height: 1.6;
+}
+
+
+.banner5 {
+    background: url('banner5.jpg') no-repeat center center; /* Asegúrate de sustituir 'tu-imagen.jpg' con la ruta de tu imagen real */
+    background-size: cover;
+    height: 300px; /* Ajusta según la altura deseada */
+    position: relative;
+    color: rgb(255, 255, 255); /* Ajusta el color de texto según tu diseño */
+}
+
+.banner5-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+.banner5 h1, .banner5 h2 {
+    margin: 0; /* Remueve margen para controlar el espaciado */
+}
+
+.banner5 p {
+    margin-bottom: 20px; /* Espaciado antes del botón */
+}
+
+
+.about-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-section h1, .about-section h2 {
+    color: #333;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.about-section ul {
+    list-style: inside disc;
+}
+
+.about-section li {
+    margin: 5px 0;
+}

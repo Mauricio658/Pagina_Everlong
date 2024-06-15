@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag added -->
+    <title>Contacto - Everlong</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1>
+                <a href="index.html">
+                  <img class="logo" src="logo.png" alt="Logo">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="ubicaciones.html">Institutos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="productos.html">Compra en Linea</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <main>
+        <form action="saveData.php" method="POST">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" name="nombreapellido" class="input-padron" required>
+            
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" name="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Numero Telefonico</label>
+            <input type="tel" id="telefono" name="telefono" class="input-padron" required placeholder="(+xx) xxxx xxxxx">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" cols="70" rows="10" required></textarea>
+
+            <fieldset>
+                <legend>¿Como le gustaria que lo contactemos?</legend>
+                <label><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                <label><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                <label><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>¿En cuál horario prefiere ser atendido?</legend>
+                <select name="horario">
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" name="novedades" checked>¿ Le gustaria recibir novedades y promociones?</label>
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+    </main>
+    
+    <footer>
+        <img src="logo.png" alt="Logo de Everlong">
+        <p class="copyright">
+             &copy Copyright Everlong - 2024
+        </p>
+    </footer>
+</body>
+</html>
